@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #2563eb;
+  color: white;
+  padding: 40px 20px;
+}
+
+/* Konten utama */
+main {
+  padding: 40px 20px;
+}
+
+/* Foto */
+.foto {
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #111827;
+  color: #ccc;
+  padding: 20px;
+  margin-top: 40px;
+}
