@@ -18,12 +18,15 @@ margin-bottom: 40px;
 }
 
 
-.foto-profil {
-width: 130px;
-border-radius: 50%;
-margin-bottom: 15px;
+.foto {
+  width: 180px;        /* ukuran normal portfolio */
+  height: 180px;       /* tinggi sama agar rapi */
+  object-fit: cover;   /* foto tidak gepeng */
+  border-radius: 50%;  /* bulat (portfolio style) */
+  margin: 20px auto;   /* tengah */
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
 
 .skills {
 margin-top: 10px;
@@ -79,3 +82,4 @@ grid-template-columns: 1fr;
 grid-column: 1 / 2;
 }
 }
+
