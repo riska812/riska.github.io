@@ -1,35 +1,81 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
-  text-align: center;
+* {
+
+
+.sidebar ul li a:hover {
+color: #2e7d32;
 }
 
-/* Header */
-header {
-  background-color: #2563eb;
-  color: white;
-  padding: 40px 20px;
+
+.main-content {
+padding: 30px;
+background: #ffffff;
 }
 
-/* Konten utama */
-main {
-  padding: 40px 20px;
+
+.hero {
+text-align: center;
+margin-bottom: 40px;
 }
 
-/* Foto */
-.foto {
-  width: 200px;
-  border-radius: 50%;
-  margin: 20px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+.foto-profil {
+width: 130px;
+border-radius: 50%;
+margin-bottom: 15px;
 }
 
-/* Footer */
-footer {
-  background-color: #111827;
-  color: #ccc;
-  padding: 20px;
-  margin-top: 40px;
+
+.skills {
+margin-top: 10px;
+padding-left: 20px;
+}
+
+
+.project-card {
+border: 1px solid #ddd;
+padding: 15px;
+border-radius: 8px;
+margin-top: 15px;
+transition: transform 0.3s;
+}
+
+
+.project-card:hover {
+transform: translateY(-5px);
+}
+
+
+.btn {
+display: inline-block;
+margin-top: 15px;
+background: #2e7d32;
+color: white;
+padding: 10px 20px;
+border-radius: 6px;
+text-decoration: none;
+}
+
+
+.btn:hover {
+background: #1b5e20;
+}
+
+
+.footer {
+grid-column: 1 / 3;
+background: #333;
+color: white;
+text-align: center;
+padding: 12px;
+font-size: 0.85rem;
+}
+
+
+@media (max-width: 768px) {
+.grid-container {
+grid-template-columns: 1fr;
+}
+.header, .footer {
+grid-column: 1 / 2;
+}
 }
