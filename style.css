@@ -1,0 +1,253 @@
+/* =========================
+   RESET & DASAR
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #0d6efd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0d6efd, #4facfe);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOTO PROFIL */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+/* TEKS HERO */
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero h2 span {
+    color: #ffe600;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: white;
+    color: #0d6efd;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* =========================
+   SECTION UMUM
+========================= */
+section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skill-box {
+    margin-top: 20px;
+}
+
+.skill-box span {
+    display: inline-block;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 8px;
+    font-size: 14px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.projects {
+    background-color: #f0f2f5;
+}
+
+.project-card {
+    background-color: white;
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #0d6efd;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact form {
+    margin-top: 20px;
+}
+
+.contact input,
+.contact textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+.contact button {
+    padding: 10px 30px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #084298;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-left: 15px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
